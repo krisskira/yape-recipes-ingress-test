@@ -6,31 +6,45 @@
 //
 
 import XCTest
+import Combine
 @testable import Yape_Recipes
 
 final class Yape_RecipesTests: XCTestCase {
 
+    var mockRequestServiceRepository: ApiService!
+    var viewModel: RecipeViewModel!
+
+    var cancellables = Set<AnyCancellable>()
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.mockRequestServiceRepository = MockRequestAPIService(data: MockRecipesRequestResponse )
+        self.viewModel = RecipeViewModel(apiRepository: mockRequestServiceRepository)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+    override func tearDownWithError() throws {}
 
     func testPerformanceExample() throws {
-        // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_ShouldLoadAllRecipes() async throws {
+        await viewModel.getRecipes()
+        XCTAssertEqual(viewModel.recipes.count, MockRecipesRequestResponse.recipes.count, "Should has all recipes mock")
+    }
+    
+    func test_ShouldFilterByRecipeName() async throws {
+        await viewModel.getRecipes()
+        viewModel.findBy(keyword: MockRecipesRequestResponse.recipes.first!.name)
+        XCTAssertEqual(viewModel.recipes.count, 1, "Should has one recipe")
+        XCTAssertEqual(viewModel.recipes.first?.name, MockRecipesRequestResponse.recipes.first!.name, "Should has the same data that mock")
+    }
 
+    func test_test_ShouldFilterByRecipeIngredients() async throws {
+        let ingredient = MockRecipesRequestResponse.recipes.first!.ingredients[0]
+        await viewModel.getRecipes()
+        viewModel.findBy(keyword: ingredient)
+        XCTAssertEqual(viewModel.recipes.count, 1, "Should has one recipe")
+    }
 }

@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63FD60772AEE99B200DD7642 /* Yape_RecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60762AEE99B200DD7642 /* Yape_RecipesApp.swift */; };
-		63FD60792AEE99B200DD7642 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60782AEE99B200DD7642 /* ContentView.swift */; };
+		63D438812AEEB33C00F749EC /* RecipeRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D438802AEEB33C00F749EC /* RecipeRequestModel.swift */; };
+		63D438832AEEBAA100F749EC /* PreviewRequestAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D438822AEEBAA100F749EC /* PreviewRequestAPIService.swift */; };
+		63D438852AEEBBD700F749EC /* PreviewRecipesRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D438842AEEBBD700F749EC /* PreviewRecipesRequestData.swift */; };
+		63D4388B2AEEC62100F749EC /* HomeRecipeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4388A2AEEC62100F749EC /* HomeRecipeCellView.swift */; };
+		63D438942AEEFFCB00F749EC /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D438932AEEFFCB00F749EC /* RecipeView.swift */; };
+		63D438962AEF0CBD00F749EC /* RouterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D438952AEF0CBD00F749EC /* RouterService.swift */; };
+		63D438992AEF1E0C00F749EC /* RecipeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D438982AEF1E0C00F749EC /* RecipeLocation.swift */; };
+		63D4389C2AEF1EB500F749EC /* RecipeMapLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4389B2AEF1EB500F749EC /* RecipeMapLocationModel.swift */; };
+		63D4389E2AEF4C8E00F749EC /* MockRequestAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4389D2AEF4C8E00F749EC /* MockRequestAPIService.swift */; };
+		63D438A12AEF4D3700F749EC /* MockRecipesRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D438A02AEF4D3700F749EC /* MockRecipesRequestResponse.swift */; };
+		63FD60772AEE99B200DD7642 /* RecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60762AEE99B200DD7642 /* RecipesApp.swift */; };
+		63FD60792AEE99B200DD7642 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60782AEE99B200DD7642 /* HomeView.swift */; };
 		63FD607B2AEE99B300DD7642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FD607A2AEE99B300DD7642 /* Assets.xcassets */; };
 		63FD607E2AEE99B300DD7642 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FD607D2AEE99B300DD7642 /* Preview Assets.xcassets */; };
 		63FD60882AEE99B300DD7642 /* Yape_RecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60872AEE99B300DD7642 /* Yape_RecipesTests.swift */; };
 		63FD60922AEE99B300DD7642 /* Yape_RecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60912AEE99B300DD7642 /* Yape_RecipesUITests.swift */; };
 		63FD60942AEE99B300DD7642 /* Yape_RecipesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60932AEE99B300DD7642 /* Yape_RecipesUITestsLaunchTests.swift */; };
+		63FD60A52AEE9BF300DD7642 /* RequestAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60A42AEE9BF300DD7642 /* RequestAPIService.swift */; };
+		63FD60A82AEE9C3B00DD7642 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60A72AEE9C3B00DD7642 /* Definitions.swift */; };
+		63FD60AB2AEE9CE000DD7642 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60AA2AEE9CE000DD7642 /* Recipe.swift */; };
+		63FD60B02AEEA46200DD7642 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD60AF2AEEA46200DD7642 /* RecipeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +48,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63D438802AEEB33C00F749EC /* RecipeRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRequestModel.swift; sourceTree = "<group>"; };
+		63D438822AEEBAA100F749EC /* PreviewRequestAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewRequestAPIService.swift; sourceTree = "<group>"; };
+		63D438842AEEBBD700F749EC /* PreviewRecipesRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewRecipesRequestData.swift; sourceTree = "<group>"; };
+		63D4388A2AEEC62100F749EC /* HomeRecipeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecipeCellView.swift; sourceTree = "<group>"; };
+		63D438932AEEFFCB00F749EC /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		63D438952AEF0CBD00F749EC /* RouterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterService.swift; sourceTree = "<group>"; };
+		63D438982AEF1E0C00F749EC /* RecipeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeLocation.swift; sourceTree = "<group>"; };
+		63D4389B2AEF1EB500F749EC /* RecipeMapLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeMapLocationModel.swift; sourceTree = "<group>"; };
+		63D4389D2AEF4C8E00F749EC /* MockRequestAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestAPIService.swift; sourceTree = "<group>"; };
+		63D438A02AEF4D3700F749EC /* MockRecipesRequestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRecipesRequestResponse.swift; sourceTree = "<group>"; };
+		63D438A22AEF72A600F749EC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		63FD60732AEE99B200DD7642 /* Yape Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yape Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63FD60762AEE99B200DD7642 /* Yape_RecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yape_RecipesApp.swift; sourceTree = "<group>"; };
-		63FD60782AEE99B200DD7642 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63FD60762AEE99B200DD7642 /* RecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesApp.swift; sourceTree = "<group>"; };
+		63FD60782AEE99B200DD7642 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		63FD607A2AEE99B300DD7642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FD607D2AEE99B300DD7642 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63FD60832AEE99B300DD7642 /* Yape RecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yape RecipesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +69,11 @@
 		63FD608D2AEE99B300DD7642 /* Yape RecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yape RecipesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FD60912AEE99B300DD7642 /* Yape_RecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yape_RecipesUITests.swift; sourceTree = "<group>"; };
 		63FD60932AEE99B300DD7642 /* Yape_RecipesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yape_RecipesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63FD60A42AEE9BF300DD7642 /* RequestAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIService.swift; sourceTree = "<group>"; };
+		63FD60A72AEE9C3B00DD7642 /* Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		63FD60AA2AEE9CE000DD7642 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		63FD60AC2AEEA01400DD7642 /* Yape-Recipes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Yape-Recipes-Info.plist"; sourceTree = SOURCE_ROOT; };
+		63FD60AF2AEEA46200DD7642 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +101,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63D438872AEEC5C200F749EC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				63FD60782AEE99B200DD7642 /* HomeView.swift */,
+				63D4388A2AEEC62100F749EC /* HomeRecipeCellView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		63D438922AEEFFB500F749EC /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				63D438932AEEFFCB00F749EC /* RecipeView.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		63D438972AEF1DE500F749EC /* RecipeLocation */ = {
+			isa = PBXGroup;
+			children = (
+				63D438982AEF1E0C00F749EC /* RecipeLocation.swift */,
+			);
+			path = RecipeLocation;
+			sourceTree = "<group>";
+		};
+		63D4389A2AEF1E9500F749EC /* RecipeLocation */ = {
+			isa = PBXGroup;
+			children = (
+				63D4389B2AEF1EB500F749EC /* RecipeMapLocationModel.swift */,
+			);
+			path = RecipeLocation;
+			sourceTree = "<group>";
+		};
+		63D4389F2AEF4CBF00F749EC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				63D4389D2AEF4C8E00F749EC /* MockRequestAPIService.swift */,
+				63D438A02AEF4D3700F749EC /* MockRecipesRequestResponse.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		63FD606A2AEE99B200DD7642 = {
 			isa = PBXGroup;
 			children = (
+				63D438A22AEF72A600F749EC /* README.md */,
+				63FD60AC2AEEA01400DD7642 /* Yape-Recipes-Info.plist */,
 				63FD60752AEE99B200DD7642 /* Yape Recipes */,
 				63FD60862AEE99B300DD7642 /* Yape RecipesTests */,
 				63FD60902AEE99B300DD7642 /* Yape RecipesUITests */,
@@ -94,10 +168,12 @@
 		63FD60752AEE99B200DD7642 /* Yape Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				63FD60762AEE99B200DD7642 /* Yape_RecipesApp.swift */,
-				63FD60782AEE99B200DD7642 /* ContentView.swift */,
-				63FD607A2AEE99B300DD7642 /* Assets.xcassets */,
-				63FD607C2AEE99B300DD7642 /* Preview Content */,
+				63FD60A12AEE9B3400DD7642 /* Models */,
+				63FD60A02AEE9B2900DD7642 /* Views */,
+				63FD60AE2AEEA42900DD7642 /* ViewModels */,
+				63FD60A32AEE9B9900DD7642 /* Services */,
+				63FD60AD2AEEA3F100DD7642 /* Resources */,
+				63FD60762AEE99B200DD7642 /* RecipesApp.swift */,
 			);
 			path = "Yape Recipes";
 			sourceTree = "<group>";
@@ -106,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				63FD607D2AEE99B300DD7642 /* Preview Assets.xcassets */,
+				63D438822AEEBAA100F749EC /* PreviewRequestAPIService.swift */,
+				63D438842AEEBBD700F749EC /* PreviewRecipesRequestData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -113,6 +191,7 @@
 		63FD60862AEE99B300DD7642 /* Yape RecipesTests */ = {
 			isa = PBXGroup;
 			children = (
+				63D4389F2AEF4CBF00F749EC /* Mocks */,
 				63FD60872AEE99B300DD7642 /* Yape_RecipesTests.swift */,
 			);
 			path = "Yape RecipesTests";
@@ -125,6 +204,69 @@
 				63FD60932AEE99B300DD7642 /* Yape_RecipesUITestsLaunchTests.swift */,
 			);
 			path = "Yape RecipesUITests";
+			sourceTree = "<group>";
+		};
+		63FD60A02AEE9B2900DD7642 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63D438972AEF1DE500F749EC /* RecipeLocation */,
+				63D438922AEEFFB500F749EC /* Recipe */,
+				63D438872AEEC5C200F749EC /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63FD60A12AEE9B3400DD7642 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63D4389A2AEF1E9500F749EC /* RecipeLocation */,
+				63FD60A92AEE9CD100DD7642 /* Recipes */,
+				63FD60A62AEE9C2600DD7642 /* AppSettings */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		63FD60A32AEE9B9900DD7642 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63FD60A42AEE9BF300DD7642 /* RequestAPIService.swift */,
+				63D438952AEF0CBD00F749EC /* RouterService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		63FD60A62AEE9C2600DD7642 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				63FD60A72AEE9C3B00DD7642 /* Definitions.swift */,
+				63D438802AEEB33C00F749EC /* RecipeRequestModel.swift */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		63FD60A92AEE9CD100DD7642 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				63FD60AA2AEE9CE000DD7642 /* Recipe.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		63FD60AD2AEEA3F100DD7642 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63FD607C2AEE99B300DD7642 /* Preview Content */,
+				63FD607A2AEE99B300DD7642 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		63FD60AE2AEEA42900DD7642 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				63FD60AF2AEEA46200DD7642 /* RecipeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +399,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FD60792AEE99B200DD7642 /* ContentView.swift in Sources */,
-				63FD60772AEE99B200DD7642 /* Yape_RecipesApp.swift in Sources */,
+				63FD60AB2AEE9CE000DD7642 /* Recipe.swift in Sources */,
+				63D438992AEF1E0C00F749EC /* RecipeLocation.swift in Sources */,
+				63D438812AEEB33C00F749EC /* RecipeRequestModel.swift in Sources */,
+				63FD60A82AEE9C3B00DD7642 /* Definitions.swift in Sources */,
+				63D4388B2AEEC62100F749EC /* HomeRecipeCellView.swift in Sources */,
+				63D438942AEEFFCB00F749EC /* RecipeView.swift in Sources */,
+				63FD60792AEE99B200DD7642 /* HomeView.swift in Sources */,
+				63FD60A52AEE9BF300DD7642 /* RequestAPIService.swift in Sources */,
+				63FD60B02AEEA46200DD7642 /* RecipeViewModel.swift in Sources */,
+				63D438962AEF0CBD00F749EC /* RouterService.swift in Sources */,
+				63D4389C2AEF1EB500F749EC /* RecipeMapLocationModel.swift in Sources */,
+				63FD60772AEE99B200DD7642 /* RecipesApp.swift in Sources */,
+				63D438852AEEBBD700F749EC /* PreviewRecipesRequestData.swift in Sources */,
+				63D438832AEEBAA100F749EC /* PreviewRequestAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D438A12AEF4D3700F749EC /* MockRecipesRequestResponse.swift in Sources */,
+				63D4389E2AEF4C8E00F749EC /* MockRequestAPIService.swift in Sources */,
 				63FD60882AEE99B300DD7642 /* Yape_RecipesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +581,7 @@
 				DEVELOPMENT_TEAM = 2276EYPC4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yape-Recipes-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +611,7 @@
 				DEVELOPMENT_TEAM = 2276EYPC4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yape-Recipes-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
